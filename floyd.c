@@ -1,3 +1,4 @@
+// // Floyd triangle for numbers
 #include<stdio.h>
 int main()
 {
@@ -11,6 +12,33 @@ int main()
             printf("%d",k++);
         }
         printf("\n");//for next line
+    }
+    return 0;
+}
+
+
+
+
+// Floyd triangle for alphabets
+#include<stdio.h>
+int main()
+{
+    char ch = 'A';//define character in here only
+    int n;
+    printf("Enter the no. of rows: ");
+    scanf("%d",&n);
+    for (int i=1 ;i<=n ;i++ )
+    {
+        for (int j=1 ;j<=i ;j++ )
+        {
+            printf("%c ", ch);
+            ch++;
+            if(ch > 'Z')//condition for more than 26 no. of rows
+            {
+                ch = 'A';//after Z to repeat A again
+            }
+        }
+        printf("\n");
     }
     return 0;
 }
