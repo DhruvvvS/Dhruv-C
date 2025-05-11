@@ -10,6 +10,6 @@ int main()
     int m;
     printf("Enter the mass(in kg) for force : ");
     scanf("%d", &m);
-    printf("The force exerted by mass %dkg is %.2f Newton",m,force(m)); // function call
+    printf("The force exerted by mass %dkg is %.2f Newton", m, force(m)); // function call
     return 0;
 }
