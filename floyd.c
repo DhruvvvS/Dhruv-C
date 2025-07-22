@@ -67,3 +67,37 @@ int main()
     function1(); // calling the function 1 which will also call the function 2
     return 0;
 }
+
+// Inverted floyd star pattern 
+/*   ****
+     ***
+     **
+     *
+*/
+
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("enter the no.");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = n; j >= i; j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    /* OR
+        for(int i=1; i<=n; i++)
+        {
+            for(int j=1; j<=n+1-i; j++)
+            { 
+                printf("*");
+            }
+            printf("\n");
+        }
+    */
+    return 0;
+}
